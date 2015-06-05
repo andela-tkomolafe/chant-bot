@@ -1,6 +1,6 @@
 module.exports = function (req, res, next) {
   var triggerWord = req.body.trigger_word,
-      userName = req.body.user_name
+      userName = 'chant-bot',
       teamId = req.body.team_id,
       teamDomain = req.body.team_domain,
       channelId= req.body.channel_id,
