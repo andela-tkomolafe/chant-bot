@@ -12,9 +12,10 @@ module.exports = function (req, res, next) {
     text : "Andela makes you code, Angular, Javascript, Express and Node, no telling we're the best. We are, we are awesome"
   };
  
-  console.log(req.body);
+
   // avoid infinite loop
   if (userName !== 'slackbot') {
+    console.log(req.body);
     return res.status(200).json(botPayload);
   } else {
     return res.status(200).end();
