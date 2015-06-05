@@ -6,11 +6,13 @@ module.exports = function (req, res, next) {
       channelId= req.body.channel_id,
       channelName = req.body.channel;
   var botPayload = {
+    trigger_word: triggerWord,
     username: userName,
     channel: channelName,
     text : "Andela makes you code, Angular, Javascript, Express and Node, no telling we're the best. We are, we are awesome"
   };
  
+  console.log(req.body);
   // avoid infinite loop
   if (userName !== 'slackbot') {
     return res.status(200).json(botPayload);
