@@ -8,7 +8,7 @@ module.exports = function (req, res, next) {
   var botPayload = {
     username: userName,
     channel: channelName,
-    text : 'Andela makes you code, Angular, Javascript, Express and Node'
+    text : "Andela makes you code, Angular, Javascript, Express and Node, no telling we're the best. We are, we are awesome"
   };
  
   // avoid infinite loop
