@@ -14,7 +14,7 @@ module.exports = function (req, res, next) {
  
 
   // avoid infinite loop
-  if (userName !== 'slackbot') {
+  if (userName == 'chantbot') {
     console.log(req.body);
     return res.status(200).json(botPayload);
   } else {
