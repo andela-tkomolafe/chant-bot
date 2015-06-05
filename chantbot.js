@@ -7,7 +7,6 @@ module.exports = function (req, res, next) {
       channelName = req.body.channel;
   var botPayload = {
     trigger_word: triggerWord,
-    username: userName,
     channel: channelName,
     text : "Andela makes you code, Angular, Javascript, Express and Node, no telling we're the best. We are, we are awesome"
   };
