@@ -1,6 +1,6 @@
 module.exports = function (req, res, next) {
   var triggerWord = req.body.trigger_word,
-      userName = 'chant-bot',
+      userName = req.body.user_name,
       teamId = req.body.team_id,
       teamDomain = req.body.team_domain,
       channelId= req.body.channel_id,
@@ -14,7 +14,7 @@ module.exports = function (req, res, next) {
  
 
   // avoid infinite loop
-  if (userName == 'chant-bot') {
+  if (userName !== 'slackbot') {
     console.log(req.body);
     return res.status(200).json(botPayload);
   } else {
