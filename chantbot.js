@@ -19,7 +19,7 @@ module.exports = function (req, res, next) {
   }
   else if (triggerWord == 'Ian' || triggerWord == 'ian'){
     botPayload.text = "All Hail The man with the strongest leg, #TIA"
-  }else if (triggerWord == 'E' || triggerWord == 'Iyinoluwa' || triggerWord == 'Iyin' || triggerWord == 'iyin'){
+  }else if (triggerWord == 'E' ||triggerWord == 'e' || triggerWord == 'Iyinoluwa' || triggerWord == 'Iyin' || triggerWord == 'iyin'){
     botPayload.text = "All Hail Big, Richest Boy E, #TIA"
   }else if (triggerWord == 'Nad' || triggerWord == 'nad' || triggerWord == 'nadayar' ){
     botPayload.text = "All Hail Super Nad, #TIA"
