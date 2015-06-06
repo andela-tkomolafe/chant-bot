@@ -8,13 +8,21 @@ module.exports = function (req, res, next) {
   var botPayload = {
     trigger_word: triggerWord,
     channel: channelName,
-    text : "Andela makes you code, Angular, Javascript, Express and Node, no telling we're the best. We are, we are awesome"
+    text : "Andela makes you code, Angular, Javascript, Express and Node,Andela makes you code, no telling we're the best.Oh yes we're dope. We are, we are awesome"
   };
  
 
+ if(triggerWord == 'jeremy' ||triggerWord == 'Jeremy'){ 
+    botPayload.text = "Don Baba J, #TIA"
+  }else if (triggerWord == 'Christina' ||triggerWord == 'christina' || triggerWord == 'Mama Sass'){
+    botPayload.text = "Mama Sass, Aw Yeah!!!, #TIA"
+  }
+  else if (triggerWord == 'Ian' || triggerWord == 'ian'){
+    botPayload.text = "The man with the strongest leg, #TIA"
+  }
+
   // avoid infinite loop
   if (userName !== 'slackbot') {
-    console.log(req.body);
     return res.status(200).json(botPayload);
   } else {
     return res.status(200).end();
