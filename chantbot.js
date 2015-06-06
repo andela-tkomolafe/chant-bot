@@ -13,12 +13,16 @@ module.exports = function (req, res, next) {
  
 
  if(triggerWord == 'jeremy' ||triggerWord == 'Jeremy'){ 
-    botPayload.text = "Don Baba J, #TIA"
+    botPayload.text = "All Hail Don Baba J, #TIA"
   }else if (triggerWord == 'Christina' ||triggerWord == 'christina' || triggerWord == 'Mama Sass'){
-    botPayload.text = "Mama Sass, Aw Yeah!!!, #TIA"
+    botPayload.text = "All Hail Mama Sass, Aw Yeah!!!, #TIA"
   }
   else if (triggerWord == 'Ian' || triggerWord == 'ian'){
-    botPayload.text = "The man with the strongest leg, #TIA"
+    botPayload.text = "All Hail The man with the strongest leg, #TIA"
+  }else if (triggerWord == '@e' || triggerWord == 'Iyinoluwa' || ){
+    botPayload.text = "All Hail Big, Richest Boy E, #TIA"
+  }else if (triggerWord == 'Nad' || triggerWord == 'nad'){
+    botPayload.text = "All Hail Super Nad, #TIA"
   }
 
   // avoid infinite loop
