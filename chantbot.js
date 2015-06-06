@@ -23,6 +23,8 @@ module.exports = function (req, res, next) {
     botPayload.text = "All Hail Big, Richest Boy E, #TIA"
   }else if (triggerWord == 'Nad' || triggerWord == 'nad' || triggerWord == 'nadayar' ){
     botPayload.text = "All Hail Super Nad, #TIA"
+  }else if (triggerWord == 'Obie' || triggerWord == 'obie'){
+    botPayload.text = "All Hail the Baddest DJ in Andela, #TIA"
   }
 
   // avoid infinite loop
