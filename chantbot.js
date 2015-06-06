@@ -7,8 +7,7 @@ module.exports = function (req, res, next) {
       channelName = req.body.channel;
   var botPayload = {
     trigger_word: triggerWord,
-    channel: channelName,
-    text : "Andela makes you code, Angular, Javascript, Express and Node,Andela makes you code, no telling we're the best.Oh yes we're dope. We are, we are awesome"
+    channel: channelName 
   };
  
 
@@ -16,15 +15,18 @@ module.exports = function (req, res, next) {
     botPayload.text = "All Hail Don Baba J, #TIA"
   }else if (triggerWord == 'Christina' ||triggerWord == 'christina' || triggerWord == 'Mama Sass'){
     botPayload.text = "All Hail Mama Sass, Aw Yeah!!!, #TIA"
-  }
+  }else if (triggerWord == '#TIA' || triggerWord == 'TIA'|| triggerWord == 'tia'||triggerWord == '#tia' || triggerWord == 'Andela' || triggerWord == 'andela'  ){
+    botPayload.text = "Andela makes you code, Angular, Javascript, Express and Node,Andela makes you code, no telling we're the best.Oh yes we're dope. We are, we are awesome"
   else if (triggerWord == 'Ian' || triggerWord == 'ian'){
     botPayload.text = "All Hail The man with the strongest leg, #TIA"
   }else if (triggerWord == 'Iyinoluwa' || triggerWord == 'Iyin' || triggerWord == 'iyin'){
     botPayload.text = "All Hail Big, Richest Boy E, #TIA"
-  }else if (triggerWord == 'Nad' || triggerWord == 'nad' || triggerWord == 'nadayar' ){
+  }else if (triggerWord == 'Nad' || triggerWord == 'nad' || triggerWord == 'Nadayar'|| triggerWord == 'nadayar' ){
     botPayload.text = "All Hail Super Nad, #TIA"
   }else if (triggerWord == 'Obie' || triggerWord == 'obie'){
     botPayload.text = "All Hail the Baddest DJ in Andela, #TIA"
+  }else {
+    botPayload.text = "You have to appease the BOT, dude"
   }
 
   // avoid infinite loop
