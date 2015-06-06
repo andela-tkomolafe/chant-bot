@@ -17,7 +17,7 @@ module.exports = function (req, res, next) {
     botPayload.text = "All Hail Mama Sass, Aw Yeah!!!, #TIA"
   }else if (triggerWord == '#TIA' || triggerWord == 'TIA'|| triggerWord == 'tia'||triggerWord == '#tia' || triggerWord == 'Andela' || triggerWord == 'andela'  ){
     botPayload.text = "Andela makes you code, Angular, Javascript, Express and Node,Andela makes you code, no telling we're the best.Oh yes we're dope. We are, we are awesome"
-  else if (triggerWord == 'Ian' || triggerWord == 'ian'){
+  }else if (triggerWord == 'Ian' || triggerWord == 'ian'){
     botPayload.text = "All Hail The man with the strongest leg, #TIA"
   }else if (triggerWord == 'Iyinoluwa' || triggerWord == 'Iyin' || triggerWord == 'iyin'){
     botPayload.text = "All Hail Big, Richest Boy E, #TIA"
